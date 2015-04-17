@@ -1,0 +1,9 @@
+<h2>Circusi</h2>
+
+<ul>
+<% @circuses.each do |circus| %>
+<li><%= link_to circus.name, circus %></li>
+<li><%= image_tag circus.image_url %></li>
+<br>
+<% end %>
+</ul>

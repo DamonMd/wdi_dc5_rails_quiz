@@ -1,1 +1,14 @@
+<h2>Welcome to <%= @circus.name %></h2>
 
+<div><%= link_to "All Circuses", "/" %></div>
+
+<br>
+
+<p>Current Lineup!</p>
+<ul>
+<% @circus.entertainers.each do |entertainer| %>
+  <li>Name: <%= entertainer.name %></li>
+  <li>Specialty: <%= entertainer.specialty %></li>
+  <br>
+<% end %>
+</ul>
